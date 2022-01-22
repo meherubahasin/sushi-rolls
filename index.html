@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sushi Rolls</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+    <link rel="manifest" href="assets/site.webmanifest">
+  </head>
+
+  <body>
+    <div class="container">
+      <span class="dot"></span>
+     <a href="index.html"><img class="logo" src="assets/sushirollslogo.png" alt="Sushi Rolls"></a>
+      <div class="navbar">
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="index.html#menu">Menu</a></li>
+            <li><a href="index.html#location">Location</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+    </div>
+
+    <div class="comingsoon">
+      <h1>Comming Soon</h1>
+      <p id="countdown"></p>
+      <script>
+      // opening date
+      var countDownDate = new Date("Feb 28, 2022 15:37:25").getTime();
+
+      var x = setInterval(function() {
+
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML = days + "d: " + hours + "h: "
+        + minutes + "m: " + seconds + "s ";
+
+        // after count down is finished
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("countdown").innerHTML = "WE ARE OPEN!";
+        }
+      }, 1000);
+      </script>
+    </div>
+    <hr>
+    <div class="intro-menu" id="menu">
+      <h1>WE HAVE..</h1>
+    </div>
+    <img class="koi-fish" src="assets/koifish.png" alt="">
+    <div class="elements">
+
+      <div class="aboutmaki">
+        <img class="img-makirolls" src="assets/makirolls.png" alt="Maki Roll">
+        <div class="maki-text">
+          <h1 class="makih1">MAKI ROLLS</h1>
+          <p class="maki-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <div class="abouturamaki">
+        <img class="img-uramaki" src="assets/uramaki.png" alt="Uramaki">
+        <div class="uramaki-text">
+          <h1 class="uramkih1">URAMAKI</h1>
+          <p class="uramki-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+
+      <div class="aboutgunkan">
+        <img class="img-gunkan" src="assets/gunkan.png" alt="Gunkan Rolls">
+        <div class="gunkan-text">
+          <h1 class="gunkanh1">GUNKAN ROLLS</h1>
+          <p class="gunkan-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+       </div>
+
+      <div class="aboutnigiri">
+        <img class="img-nigiri" src="assets/nigiri.png" alt="Nigiri">
+        <div class="nigiri-text">
+          <h1 class="nigirih1">NIGIRI</h1>
+          <p class="nigiri-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+      </div>
+    </div>
+        <hr>
+    <div class="location" id="location">
+      <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d233667.82239206054!2d90.27923760113653!3d23.780887456421343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b087026b81%3A0x8fa563bbdd5904c2!2sDhaka!5e0!3m2!1sen!2sbd!4v1640185496941!5m2!1sen!2sbd" width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="find-us">
+          <h1 class="locationh1">FIND US AT</h1>
+          <p class="location-p">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <a href="index.html"><img class="footer-logo" src="assets/sushirollslogo.png" alt="Sushi Rolls"></a>
+      <table class="footer-table">
+        <tr>
+          <td><div class="footer-content">
+            <h1>CONTACT</h1>
+            <ul>
+              <li><a href="wwww.facebook.com">Facebook</a></li>
+              <li><a href="wwww.instagram.com">Instagram</a></li>
+              <li><a href="wwww.twitter.com">Twitter</a></li>
+              <li><a href="wwww.linkedin.com">LinkedIn</a></li>
+              <li><a href="">Email</a></li>
+            </ul>
+          </div></td>
+          <td>
+            <div class="footer-about">
+              <h1>ABOUT</h1>
+              <ul>
+                <li><a href="">Restaurant</a></li>
+                <li><a href="">Owners</a></li>
+                <li><a href="">Staff</a></li>
+                <li><a href="">Career</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="footer-affiliations">
+              <h1>AFFLIATIONS</h1>
+              <ul>
+                <li><a href="">FoodPanda</a></li>
+                <li><a href="">ShohozFood</a></li>
+                <li><a href="">HungryNaki</a></li>
+                <li><a href="">UberEats</a></li>
+              </ul>
+            </div>
+          </td>
+          <td>
+            <div class="footer-membership">
+              <h1>MEMBERSHIP</h1>
+              <ul>
+                <li><a href="">Monthly Membership</a></li>
+                <li><a href="">Premium Membership</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <div class="footer-p">
+        <p>Copyright © 2019 by Meheruba Hasin. All rights reserved.</p>
+      </div>
+    </div>
+
+  </body>
+</html>
